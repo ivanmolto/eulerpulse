@@ -51,7 +51,17 @@ export default function EthereumSwaps({ slug, column }: DuneDataProps) {
 
   const formattedDataChart = data.map((row: Record<string, any>) => ({
     ...row,
-    Day: new Date(row.Day).toISOString().split("T")[0], // Converts "2024-10-01 00:00:00.000 UTC" to "2024-10-01"
+    Day: (() => {
+      // Handle different date formats
+      const dateStr = row.Day;
+      if (dateStr.includes("UTC")) {
+        // If it already has UTC, just extract the date part
+        return dateStr.split(" ")[0];
+      } else {
+        // If no timezone indicator, treat as UTC by adding Z
+        return new Date(dateStr + "Z").toISOString().split("T")[0];
+      }
+    })(),
   }));
   const sortedDataChart = [...formattedDataChart].sort(
     (a, b) => new Date(a.Day).getTime() - new Date(b.Day).getTime()
