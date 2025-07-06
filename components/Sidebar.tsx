@@ -286,7 +286,7 @@ const SidebarLink = React.forwardRef<
       className={cx(
         "flex items-center justify-between rounded-md p-2 text-base transition hover:bg-gray-200/50 sm:text-sm hover:dark:bg-gray-900",
         "text-gray-900 dark:text-gray-400 hover:dark:text-gray-50",
-        "data-[active=true]:text-red-600 data-[active=true]:dark:text-red-500",
+        "data-[active=true]:text-teal-600 data-[active=true]:dark:text-teal-500",
         focusRing
       )}
       {...props}
@@ -296,7 +296,7 @@ const SidebarLink = React.forwardRef<
         {children}
       </span>
       {notifications && (
-        <span className="inline-flex size-5 items-center justify-center rounded bg-red-100 text-sm font-medium text-red-600 sm:text-xs dark:bg-red-500/10 dark:text-red-500">
+        <span className="inline-flex size-5 items-center justify-center rounded bg-teal-100 text-sm font-medium text-teal-600 sm:text-xs dark:bg-teal-500/10 dark:text-teal-500">
           {notifications}
         </span>
       )}
@@ -367,14 +367,14 @@ const SidebarSubLink = React.forwardRef<
       className={cx(
         "relative flex gap-2 rounded-md py-1.5 pl-9 pr-3 text-base transition sm:text-sm",
         "text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50",
-        "data-[active=true]:rounded data-[active=true]:bg-white data-[active=true]:text-red-600 data-[active=true]:shadow data-[active=true]:ring-1 data-[active=true]:ring-gray-200 data-[active=true]:dark:bg-gray-900 data-[active=true]:dark:text-red-500 data-[active=true]:dark:ring-gray-800",
+        "data-[active=true]:rounded data-[active=true]:bg-white data-[active=true]:text-teal-600 data-[active=true]:shadow data-[active=true]:ring-1 data-[active=true]:ring-gray-200 data-[active=true]:dark:bg-gray-900 data-[active=true]:dark:text-teal-500 data-[active=true]:dark:ring-gray-800",
         focusRing
       )}
       {...props}
     >
       {isActive && (
         <div
-          className="absolute left-4 top-1/2 h-5 w-px -translate-y-1/2 bg-red-500 dark:bg-red-500"
+          className="absolute left-4 top-1/2 h-5 w-px -translate-y-1/2 bg-teal-500 dark:bg-teal-500"
           aria-hidden="true"
         />
       )}
