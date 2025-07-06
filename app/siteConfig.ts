@@ -7,14 +7,17 @@ export const siteConfig = {
     allswaps: {
       overview: "/all-swaps/overview",
       trends: "/all-swaps/trends",
+      breakdown: "/all-swaps/breakdown",
     },
     allvolumes: {
       overview: "/all-volumes/overview",
       trends: "/all-volumes/trends",
+      breakdown: "/all-volumes/breakdown",
     },
     allfees: {
       overview: "/all-fees/overview",
       trends: "/all-fees/trends",
+      breakdown: "/all-fees/breakdown",
     },
     allpools: {
       overview: "/all-pools/overview",
