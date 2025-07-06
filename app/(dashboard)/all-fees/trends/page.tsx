@@ -3,7 +3,7 @@
 import Fees from "@/components/ui/all-fees/Fees";
 export default function Trends() {
   return (
-    <section aria-label="App Monitoring">
+    <section aria-label="Trends">
       <dl className="-ml-4 grid grid-cols-1 gap-x-14 gap-y-10 border-t border-gray-200 p-6 md:grid-cols-2 dark:border-gray-800">
         <div className="flex flex-col justify-between p-0">
           <div>
