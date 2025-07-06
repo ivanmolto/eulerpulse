@@ -9,6 +9,7 @@ import { siteConfig } from "../../siteConfig";
 const navigation = [
   { name: "Overview", href: siteConfig.baseLinks.allswaps.overview },
   { name: "Trends", href: siteConfig.baseLinks.allswaps.trends },
+  { name: "Breakdown", href: siteConfig.baseLinks.allswaps.breakdown },
 ];
 export default function Layout({
   children,
