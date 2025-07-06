@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
@@ -20,12 +21,12 @@ const fetchDuneData = async (slug: string): Promise<any> => {
   return data.result?.rows;
 };
 
-import { BarChart } from "@/components/BarChart";
+import { LineChart } from "@/components/LineChart";
 import { formatters } from "@/lib/utils";
 
-export default function BreakdownSwaps({ slug, column }: DuneDataProps) {
+export default function CumulativeSwapsChain({ slug, column }: DuneDataProps) {
   const { data, isLoading, error } = useQuery({
-    queryKey: ["breakdown-swaps", slug],
+    queryKey: ["cumulative-swaps-chain", slug],
     queryFn: () => fetchDuneData(slug),
   });
 
@@ -119,38 +120,33 @@ export default function BreakdownSwaps({ slug, column }: DuneDataProps) {
 
   const chainColors = getColorsForChains(chainNames);
 
+  // Check if we have valid data for the chart
+  if (sortedDataChart.length === 0) {
+    return <div>No valid data available for chart</div>;
+  }
+
+  if (chainNames.length === 0) {
+    return <div>No chain categories found</div>;
+  }
+
   return (
-    <>
-      <BarChart
-        className="mt-4 hidden h-60 md:block"
-        type="stacked"
+    <div>
+      <LineChart
+        colors={chainColors}
         data={sortedDataChart}
         index="Day"
         categories={chainNames}
-        colors={chainColors}
-        yAxisWidth={45}
-        yAxisLabel=" "
-        barCategoryGap="20%"
-        valueFormatter={(value) => {
+        valueFormatter={(value: number) => {
           const formattedValue =
             value >= 1000000
               ? `${(value / 1000000).toFixed(2)}M`
               : value >= 1000
-              ? `${(value / 1000).toFixed(2)}k`
+              ? `${(value / 1000).toFixed(1)}k`
               : formatters.unit(value);
           return formattedValue;
         }}
+        className="mt-4 h-60"
       />
-      <BarChart
-        type="stacked"
-        data={sortedDataChart}
-        index="Day"
-        categories={chainNames}
-        colors={chainColors}
-        showYAxis={false}
-        barCategoryGap="20%"
-        className="mt-4 h-60 md:hidden"
-      />
-    </>
+    </div>
   );
 }
