@@ -8,7 +8,9 @@ export function VolumesMetricsCards() {
       </h1>
       <dl className="mt-6 flex flex-wrap items-center gap-x-12 gap-y-8">
         <div>
-          <dt className="text-sm text-gray-500 dark:text-gray-500">Volume</dt>
+          <dt className="text-sm text-gray-500 dark:text-gray-500">
+            Trading Volume
+          </dt>
           <VolumesCount slug="all-volumes-count" />
         </div>
       </dl>
