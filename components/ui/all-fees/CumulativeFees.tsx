@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
@@ -20,11 +21,11 @@ const fetchDuneData = async (slug: string): Promise<any> => {
   return data.result?.rows;
 };
 
-import { BarChart } from "@/components/BarChart";
+import { LineChart } from "@/components/LineChart";
 
-export default function Fees({ slug, column }: DuneDataProps) {
+export default function CumulativeFees({ slug, column }: DuneDataProps) {
   const { data, isLoading, error } = useQuery({
-    queryKey: ["fees", slug],
+    queryKey: ["cumulative-fees", slug],
     queryFn: () => fetchDuneData(slug),
   });
 
@@ -50,31 +51,21 @@ export default function Fees({ slug, column }: DuneDataProps) {
 
   const formattedDataChart = data.map((row: Record<string, any>) => ({
     ...row,
-    Day: (() => {
-      // Handle different date formats
-      const dateStr = row.Day;
-      if (dateStr.includes("UTC")) {
-        // If it already has UTC, just extract the date part
-        return dateStr.split(" ")[0];
-      } else {
-        // If no timezone indicator, treat as UTC by adding Z
-        return new Date(dateStr + "Z").toISOString().split("T")[0];
-      }
-    })(),
+    Day: new Date(row.Day.split(" ")[0] + "T00:00:00Z")
+      .toISOString()
+      .split("T")[0], // Converts "2024-10-01 00:00:00.000 UTC" to "2024-10-01"
   }));
   const sortedDataChart = [...formattedDataChart].sort(
     (a, b) => new Date(a.Day).getTime() - new Date(b.Day).getTime()
   );
   return (
     <>
-      <BarChart
+      <LineChart
+        className="h-60 w-full"
+        colors={["teal"]}
         data={sortedDataChart}
         index="Day"
         categories={["Fees"]}
-        colors={["teal"]}
-        yAxisWidth={45}
-        yAxisLabel=" "
-        barCategoryGap="20%"
         valueFormatter={(value) => {
           const formattedValue =
             value >= 1000000
@@ -84,16 +75,7 @@ export default function Fees({ slug, column }: DuneDataProps) {
               : `$${value.toFixed(2)}`;
           return formattedValue;
         }}
-        className="mt-4 hidden h-60 md:block"
-      />
-      <BarChart
-        data={sortedDataChart}
-        index="Day"
-        categories={["Fees"]}
-        colors={["teal"]}
-        showYAxis={false}
-        barCategoryGap="20%"
-        className="mt-4 h-60 md:hidden"
+        onValueChange={(v) => console.log(v)}
       />
     </>
   );
