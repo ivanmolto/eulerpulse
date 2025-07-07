@@ -151,6 +151,12 @@ export const chartColors = {
     fill: "fill-purple-500 dark:fill-purple-500",
     text: "text-purple-500 dark:text-purple-500",
   },
+  lightPurple: {
+    bg: "bg-purple-300/50 dark:bg-purple-800/50",
+    stroke: "stroke-purple-300/50 dark:stroke-purple-800/50",
+    fill: "fill-purple-300/50 dark:fill-purple-800/50",
+    text: "text-purple-300/50 dark:text-purple-800/50",
+  },
   sync: {
     bg: "bg-gray-950 dark:bg-gray-50",
     stroke: "stroke-gray-950 dark:stroke-gray-50",
