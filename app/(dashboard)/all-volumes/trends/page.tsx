@@ -44,7 +44,7 @@ export default function Trends() {
               Quarterly Trading Volume
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              TradingVolume over time grouped by quarter
+              Trading Volume over time grouped by quarter
             </dd>
           </div>
           <Volumes slug="all-quarterly-volumes" />
