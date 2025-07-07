@@ -66,7 +66,7 @@ const Layout = ({
         </div>
         <Link
           className="ml-auto w-fit inline-flex cursor-pointer flex-row items-center justify-center gap-1 rounded-sm border-b-[1.5px] border-teal-700 bg-linear-to-b from-teal-400 to-teal-500 px-3 py-2 leading-4 text-sm font-medium tracking-wide whitespace-nowrap text-gray-900 shadow-[0_0_0_2px_rgba(0,0,0,0.04),0_0_14px_0_rgba(255,255,255,0.19)] transition-all duration-200 ease-in-out hover:shadow-teal-300"
-          href="/all/overview"
+          href="/all-volumes/overview"
         >
           Launch App
         </Link>
