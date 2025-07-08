@@ -30,7 +30,7 @@ const navigation = [
     icon: Link,
     children: [
       {
-        name: "Volumes",
+        name: "Trading Volume",
         href: "/all-volumes/overview",
       },
       {
@@ -57,23 +57,13 @@ const navigation = [
     icon: EthereumIcon,
     children: [
       {
-        name: "Volumes",
+        name: "TradingVolume",
         href: "/ethereum-volumes/overview",
         active: false,
       },
       {
         name: "Fees",
         href: "/ethereum-fees/overview",
-        active: false,
-      },
-      {
-        name: "Pools",
-        href: "/ethereum-pools/overview",
-        active: false,
-      },
-      {
-        name: "Assets",
-        href: "/ethereum-assets/overview",
         active: false,
       },
       {
@@ -89,23 +79,13 @@ const navigation = [
     icon: UnichainIcon,
     children: [
       {
-        name: "Volumes",
+        name: "TradingVolume",
         href: "/unichain-volumes/overview",
         active: false,
       },
       {
         name: "Fees",
         href: "/unichain-fees/overview",
-        active: false,
-      },
-      {
-        name: "Pools",
-        href: "/unichain-pools/overview",
-        active: false,
-      },
-      {
-        name: "Assets",
-        href: "/unichain-assets/overview",
         active: false,
       },
       {
@@ -145,7 +125,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader className="px-3 py-4">
         <div className="flex items-center gap-3">
           <span className="flex size-9 items-center justify-center rounded-md bg-white p-1.5 shadow-sm ring-1 ring-gray-200 dark:bg-gray-900 dark:ring-gray-800">
-            <Logo className="size-6 -ml-2 -mt-1" />
+            <Logo className="size-6" />
           </span>
           <div>
             <span className="block text-sm font-semibold text-gray-900 dark:text-gray-50">
