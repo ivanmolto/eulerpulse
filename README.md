@@ -21,11 +21,13 @@ Please watch Euler Pulse pitch at EulerSwap Builder Competition [here](https://y
 
 ## API Endpoints Documentation
 
-## Tech Stack and Documentation
-
-This project uses [Dune Analytics](https://dune.com/) as a data provider. All API endpoints are based on queries of EulerSwap's decoded smart contracts. Initially, the endpoints are automatically updated every Monday at 00:00 UTC.
+All API endpoints are powered by Dune queries based on EulerSwap's decoded smart contracts. The endpoints are automatically updated every Monday at 00:00 UTC.
 
 Please check all our queries on Dune Analytics [here](https://dune.com/eulerswap_pulse)
+
+## Tech Stack
+
+This project uses [Dune Analytics](https://dune.com/) as a data provider.
 
 Additionally, Euler Pulse uses [NextJS](https://nextjs.org/), [Recharts](https://recharts.org/), [Tanstack React Query](https://tanstack.com/query/latest), [TailwindCSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Motion](https://motion.dev/).
 
