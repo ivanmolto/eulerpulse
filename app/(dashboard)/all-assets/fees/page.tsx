@@ -1,6 +1,6 @@
 "use client";
 
-import AssetsStakedVolumes from "@/components/ui/all-assets/AssetsStakedVolumes";
+import AssetsStakedFees from "@/components/ui/all-assets/AssetsStakedFees";
 export default function Trends() {
   return (
     <section aria-label="App Monitoring">
@@ -8,47 +8,46 @@ export default function Trends() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Daily Trading Volume
+              Daily Fees
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by day and broken down by asset
+              Fees over time grouped by day and broken down by asset
             </dd>
           </div>
-          <AssetsStakedVolumes slug="daily-assets-volumes" />
+          <AssetsStakedFees slug="daily-assets-fees" />
         </div>
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Weekly Trading Volume
+              Weekly Fees
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by week and broken down by asset
+              Fees over time grouped by week and broken down by asset
             </dd>
           </div>
-          <AssetsStakedVolumes slug="weekly-assets-volumes" />
+          <AssetsStakedFees slug="weekly-assets-fees" />
         </div>
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Monthly Trading Volume
+              Monthly Fees
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by month and broken down by asset
+              Fees over time grouped by month and broken down by asset
             </dd>
           </div>
-          <AssetsStakedVolumes slug="monthly-assets-vol" />
+          <AssetsStakedFees slug="monthly-assets-fees" />
         </div>
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Quarterly Trading Volume
+              Quarterly Fees
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by quarter and broken down by
-              asset
+              Fees over time grouped by quarter and broken down by asset
             </dd>
           </div>
-          <AssetsStakedVolumes slug="quarterly-assets-volume" />
+          <AssetsStakedFees slug="quarterly-assets-fees" />
         </div>
       </dl>
     </section>
