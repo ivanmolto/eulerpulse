@@ -19,7 +19,7 @@ import { Button } from "./Button";
 
 const SIDEBAR_COOKIE_NAME = "sidebar:state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
-const SIDEBAR_WIDTH = "14.61rem";
+const SIDEBAR_WIDTH = "14.68rem";
 
 type SidebarContext = {
   state: "expanded" | "collapsed";
