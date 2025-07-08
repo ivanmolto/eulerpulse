@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section aria-label="hero">
       <FadeContainer className="relative flex flex-col items-center justify-center">
-        <FadeDiv className="mx-auto">
+        <FadeDiv className="mx-auto hidden sm:block">
           <a
             aria-label="Latest update news"
             href="https://eulerswap.encode.club"
