@@ -1,5 +1,6 @@
 import * as React from "react";
 import type { SVGProps } from "react";
+
 const Logo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     height="100%"
@@ -44,4 +45,5 @@ const Logo = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
+
 export { Logo };
