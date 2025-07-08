@@ -25,7 +25,8 @@ export const siteConfig = {
     },
     allassets: {
       overview: "/all-assets/overview",
-      trends: "/all-assets/trends",
+      trends: "/all-assets/volumes",
+      breakdown: "/all-assets/fees",
     },
     ethereumswaps: {
       overview: "/ethereum-swaps/overview",
