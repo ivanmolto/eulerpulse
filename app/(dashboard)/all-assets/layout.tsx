@@ -8,7 +8,7 @@ import { siteConfig } from "../../siteConfig";
 
 const navigation = [
   { name: "Overview", href: siteConfig.baseLinks.allassets.overview },
-  { name: "Trading Volume", href: siteConfig.baseLinks.allassets.trends },
+  { name: "Trading Volumes", href: siteConfig.baseLinks.allassets.trends },
   { name: "Fees", href: siteConfig.baseLinks.allassets.breakdown },
 ];
 export default function Layout({
