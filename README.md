@@ -6,12 +6,18 @@ Euler Pulse is a analyst platform empowering users, developers, and data analyst
 
 The Euler Builder Competition is about building the future of DeFi. Euler Pulse isn't just a tool - it's the intelligence layer that unlock EulerSwap full potential.
 
+Built for the [EulerSwap Builder Competition]() at [Encode Club]()
+
+Please visit Euler Pulse [here](https://www.eulerpulse.com)
+
 ## Overview
 
 What if DeFi users, developers, and analysts could unlock maximum opportunities with insights and powerful analytics?
 With EulerSwap's revolutionary DEX it is necessary platforms and tools to navigate this new landscape and maximize returns.
 
 Meet Euler Pulse - the data intelligence platform built specifically for the Euler ecosystem.
+
+Please watch Euler Pulse pitch at EulerSwap Builder Competition [here]()
 
 ## Tech Stack
 
