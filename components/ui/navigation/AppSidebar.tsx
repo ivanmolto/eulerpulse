@@ -57,7 +57,7 @@ const navigation = [
     icon: EthereumIcon,
     children: [
       {
-        name: "TradingVolume",
+        name: "Trading Volume",
         href: "/ethereum-volumes/overview",
         active: false,
       },
@@ -79,7 +79,7 @@ const navigation = [
     icon: UnichainIcon,
     children: [
       {
-        name: "TradingVolume",
+        name: "Trading Volume",
         href: "/unichain-volumes/overview",
         active: false,
       },
