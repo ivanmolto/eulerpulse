@@ -13,7 +13,7 @@ export default function Overview() {
           <div className="flex flex-col justify-between p-0">
             <div>
               <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                Cumulative Volume over time
+                Cumulative Trading Volume over time
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
                 Volume accumulated over time
@@ -24,10 +24,10 @@ export default function Overview() {
           <div className="flex flex-col justify-between p-0">
             <div>
               <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                Cumulative Volume over time by chain
+                Cumulative TradingVolume over time by chain
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-                Volume over time by chain
+                Trading Volume over time by chain
               </dd>
             </div>
             <CumulativeVolumesChain slug="cumulative-volumes-chain" />
