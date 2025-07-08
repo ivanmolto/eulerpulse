@@ -1,3 +1,27 @@
+# EULER PULSE
+
+## Intro
+
+Euler Pulse is a analyst platform empowering users, developers, and data analysts with comprehensive tools and on-chain insights designed specifically for EulerSwap.
+
+The Euler Builder Competition is about building the future of DeFi. Euler Pulse isn't just a tool - it's the intelligence layer that unlock EulerSwap full potential.
+
+## Overview
+
+What if DeFi users, developers, and analysts could unlock maximum opportunities with insights and powerful analytics?
+With EulerSwap's revolutionary DEX it is necessary platforms and tools to navigate this new landscape and maximize returns.
+
+Meet Euler Pulse - the data intelligence platform built specifically for the Euler ecosystem.
+
+## Tech Stack
+
+This project uses [Dune Analytics](https://dune.com/) as a data provider.
+All API endpoints have been created from querying EulerSwap's decoded smart contracts. Initially endpoints are automatically updated Mondays at 00:00 UTC
+
+Additionally, Euler Pulse uses [NextJS](https://nextjs.org/), [Recharts](https://recharts.org/), [Tanstack React Query](https://tanstack.com/query/latest), [TailwindCSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Motion](https://motion.dev/).
+
+## Set up Next + TypeScript + TailwindCSS
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
