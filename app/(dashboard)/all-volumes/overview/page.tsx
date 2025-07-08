@@ -16,7 +16,7 @@ export default function Overview() {
                 Cumulative Trading Volume over time
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-                Volume accumulated over time
+                Trading Volume accumulated over time
               </dd>
             </div>
             <CumulativeVolumes slug="cumulative-volumes" />
@@ -24,10 +24,10 @@ export default function Overview() {
           <div className="flex flex-col justify-between p-0">
             <div>
               <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                Cumulative TradingVolume over time by chain
+                Cumulative Trading Volume over time by chain
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-                Trading Volume over time by chain
+                Trading Volume accumulated over time by chain
               </dd>
             </div>
             <CumulativeVolumesChain slug="cumulative-volumes-chain" />
@@ -43,10 +43,10 @@ export default function Overview() {
           <div className="flex flex-col justify-between p-0">
             <div>
               <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                Cumulative Volume over time, staked by chain
+                Cumulative Trading Volume over time, staked by chain
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-                Volume accumulated over time, staked by chain
+                Trading Volume accumulated over time, staked by chain
               </dd>
             </div>
             <CumulativeStakedVolumes slug="cumulative-volumes-chain" />
