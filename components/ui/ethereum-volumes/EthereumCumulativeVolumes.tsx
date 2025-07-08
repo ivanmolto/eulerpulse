@@ -71,8 +71,10 @@ export default function EthereumCumulativeVolumes({
         categories={["Volumes"]}
         valueFormatter={(value) => {
           const formattedValue =
-            value >= 1000000
-              ? `$${(value / 1000000).toFixed(2)}M`
+            value >= 1000000000
+              ? `$${(value / 1000000000).toFixed(2)}B`
+              : value >= 1000000
+              ? `$${(value / 1000000).toFixed(0)}M`
               : value >= 1000
               ? `$${(value / 1000).toFixed(2)}k`
               : `$${value.toFixed(2)}`;

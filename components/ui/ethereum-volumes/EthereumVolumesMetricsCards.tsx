@@ -8,8 +8,10 @@ export function EthereumVolumesMetricsCards() {
       </h1>
       <dl className="mt-6 flex flex-wrap items-center gap-x-12 gap-y-8">
         <div>
-          <dt className="text-sm text-gray-500 dark:text-gray-500">Volume</dt>
-          <EthereumVolumesCount slug="all-volumes-count" />
+          <dt className="text-sm text-gray-500 dark:text-gray-500">
+            Trading Volume
+          </dt>
+          <EthereumVolumesCount slug="ethereum-volumes-count" />
         </div>
       </dl>
     </>
