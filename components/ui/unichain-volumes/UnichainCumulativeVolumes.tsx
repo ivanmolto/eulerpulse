@@ -68,11 +68,11 @@ export default function EthereumCumulativeVolumes({
         colors={["pink"]}
         data={sortedDataChart}
         index="Day"
-        categories={["Swaps"]}
+        categories={["Volumes"]}
         valueFormatter={(value) => {
           const formattedValue =
             value >= 1000000
-              ? `$${(value / 1000000).toFixed(2)}M`
+              ? `$${(value / 1000000).toFixed(1)}M`
               : value >= 1000
               ? `$${(value / 1000).toFixed(2)}k`
               : `$${value.toFixed(2)}`;
