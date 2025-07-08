@@ -85,15 +85,13 @@ export function DropdownUserProfile({
           <DropdownMenuGroup>
             <DropdownMenuItem>
               <a
-                href="https://easpulse.info"
+                href="https://dune.com/eulerswap_pulse"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" text-gray-700 dark:text-gray-300 transition-colors duration-200 "
               >
                 <span className="group inline-flex hover:text-red-400">
-                  <span className="group-hover:text-red-400">
-                    Documentation
-                  </span>
+                  <span className="group-hover:text-red-400">Queries Docs</span>
                   <ArrowUpRight
                     className="mb-1 ml-1 size-3 shrink-0 text-gray-500 group-hover:text-red-400"
                     aria-hidden="true"
@@ -103,7 +101,7 @@ export function DropdownUserProfile({
             </DropdownMenuItem>
             <DropdownMenuItem>
               <a
-                href="https://github.com/easpulse"
+                href="https://github.com/ivanmolto/eulerpulse"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" text-gray-700 dark:text-gray-300 transition-colors duration-200 "
@@ -119,7 +117,7 @@ export function DropdownUserProfile({
             </DropdownMenuItem>
             <DropdownMenuItem>
               <a
-                href="https://x.com/eas_pulse"
+                href="https://x.com/ivanmolto"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" text-gray-700 dark:text-gray-300 transition-colors duration-200 "
