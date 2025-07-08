@@ -6,7 +6,7 @@ Euler Pulse is a analyst platform empowering users, developers, and data analyst
 
 The Euler Builder Competition is about building the future of DeFi. Euler Pulse isn't just a tool - it's the intelligence layer that unlock EulerSwap full potential.
 
-Built for the [EulerSwap Builder Competition]() at [Encode Club]()
+Built for the [EulerSwap Builder Competition](https://eulerswap.encode.club/) at [Encode Club](https://www.encode.club/)
 
 Please visit Euler Pulse [here](https://www.eulerpulse.com)
 
@@ -17,12 +17,15 @@ With EulerSwap's revolutionary DEX it is necessary platforms and tools to naviga
 
 Meet Euler Pulse - the data intelligence platform built specifically for the Euler ecosystem.
 
-Please watch Euler Pulse pitch at EulerSwap Builder Competition [here]()
+Please watch Euler Pulse pitch at EulerSwap Builder Competition [here](https://youtu.be/w-GGorNBMEY?si=GLgANGJebE7UvjMQ)
 
-## Tech Stack
+## API Endpoints Documentation
 
-This project uses [Dune Analytics](https://dune.com/) as a data provider.
-All API endpoints have been created from querying EulerSwap's decoded smart contracts. Initially endpoints are automatically updated Mondays at 00:00 UTC
+## Tech Stack and Documentation
+
+This project uses [Dune Analytics](https://dune.com/) as a data provider. All API endpoints are based on queries of EulerSwap's decoded smart contracts. Initially, the endpoints are automatically updated every Monday at 00:00 UTC.
+
+Please check all our queries on Dune Analytics [here](https://dune.com/eulerswap_pulse)
 
 Additionally, Euler Pulse uses [NextJS](https://nextjs.org/), [Recharts](https://recharts.org/), [Tanstack React Query](https://tanstack.com/query/latest), [TailwindCSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Motion](https://motion.dev/).
 
