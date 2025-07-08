@@ -37,10 +37,10 @@ const navigation = [
         name: "Fees",
         href: "/all-fees/overview",
       },
-      {
+      /* {
         name: "Pools",
         href: "/all-pools/overview",
-      },
+      }, */
       {
         name: "Assets",
         href: "/all-assets/overview",
