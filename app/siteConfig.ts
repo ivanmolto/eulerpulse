@@ -21,7 +21,8 @@ export const siteConfig = {
     },
     allpools: {
       overview: "/all-pools/overview",
-      trends: "/all-pools/trends",
+      trends: "/all-pools/volumes",
+      breakdown: "/all-pools/fees",
     },
     allassets: {
       overview: "/all-assets/overview",
