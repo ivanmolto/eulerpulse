@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     creator: "@ivanmolto",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [{ url: "/favicon.png", sizes: "64x64", type: "image/png" }],
   },
 };
 
@@ -63,6 +63,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.png" sizes="64x64" />
+      </head>
       <body
         className={`${GeistSans.className} min-h-screen overflow-x-hidden overflow-y-scroll scroll-auto bg-gray-50 dark:bg-gray-950 antialiased selection:bg-orange-100 selection:text-amber-600`}
       >
