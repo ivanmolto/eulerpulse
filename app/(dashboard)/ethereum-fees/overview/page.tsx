@@ -8,7 +8,7 @@ export default function Overview() {
     <section aria-labelledby="usage-overview">
       <dl
         className={cx(
-          "ml-2 mt-10 grid grid-cols-1 gap-14 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1"
+          "ml-2 mt-6 grid grid-cols-1 gap-14 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1"
         )}
       >
         <div className="flex flex-col justify-between p-0">
