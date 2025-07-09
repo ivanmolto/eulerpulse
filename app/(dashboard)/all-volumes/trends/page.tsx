@@ -33,7 +33,7 @@ export default function Trends() {
               Monthly Trading Volume
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              TradingVolume over time grouped by month
+              Trading Volume over time grouped by month
             </dd>
           </div>
           <Volumes slug="all-monthly-volumes" />
