@@ -12,9 +12,6 @@ export function FeesMetricsCards() {
             Total Fees
           </dt>
           <FeesCount slug="all-fees-count" />
-          <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-            Fees include protocol and LP fees
-          </dd>
         </div>
       </dl>
     </>
