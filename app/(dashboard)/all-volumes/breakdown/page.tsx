@@ -8,10 +8,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Daily Trading Volume
+              Daily Trading Volume by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Volume over time, grouped by day and broken down by chain
+              Trading volume over time, grouped by day and by chain
             </dd>
           </div>
           <BreakdownVolumes slug="breakdown-daily-volumes" />
@@ -19,10 +19,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Weekly TradingVolume
+              Weekly Trading Volume by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Volume over time, grouped by week and broken down by chain
+              Trading volume over time, grouped by week and by chain
             </dd>
           </div>
           <BreakdownVolumes slug="breakdown-weekly-volumes" />
@@ -30,10 +30,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Monthly TradingVolume
+              Monthly Trading Volume by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Volume over time, grouped by month and broken down by chain
+              Trading volume over time, grouped by month and by chain
             </dd>
           </div>
           <BreakdownVolumes slug="breakdown-monthly-volumes" />
@@ -44,7 +44,7 @@ export default function Breakdown() {
               Quarterly Trading Volume
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Volume over time, grouped by quarter and broken down by chain
+              Trading volume over time, grouped by quarter and by chain
             </dd>
           </div>
           <BreakdownVolumes slug="breakdown-quarterly-volumes" />

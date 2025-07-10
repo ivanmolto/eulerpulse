@@ -15,10 +15,10 @@ export default function Overview() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Cumulative Trading Volume over time by asset
+              Cumulative Trading Volume over time by Asset
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume accumulated over time by asset
+              Trading volume accumulated over time by asset
             </dd>
           </div>
           <AssetsCumulativeStakedVolumes slug="assets-cumulative-volumes" />
@@ -26,7 +26,7 @@ export default function Overview() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Cumulative Fees over time by asset
+              Cumulative Fees over time by Asset
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
               Fees accumulated over time by asset

@@ -8,10 +8,10 @@ export default function Trends() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Daily Trading Volume
+              Daily Trading Volume by Asset
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by day and broken down by asset
+              Trading volume over time, grouped by and by asset
             </dd>
           </div>
           <AssetsStakedVolumes slug="daily-assets-volumes" />
@@ -19,10 +19,10 @@ export default function Trends() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Weekly Trading Volume
+              Weekly Trading Volume by Asset
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by week and broken down by asset
+              Trading Volume over time, grouped by week and by asset
             </dd>
           </div>
           <AssetsStakedVolumes slug="weekly-assets-volumes" />
@@ -30,10 +30,10 @@ export default function Trends() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Monthly Trading Volume
+              Monthly Trading Volume by Asset
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by month and broken down by asset
+              Trading volume over time grouped, by month and by asset
             </dd>
           </div>
           <AssetsStakedVolumes slug="monthly-assets-vol" />
@@ -41,11 +41,10 @@ export default function Trends() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Quarterly Trading Volume
+              Quarterly Trading Volume by Asset
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by quarter and broken down by
-              asset
+              Trading volume over time, grouped by quarter and by asset
             </dd>
           </div>
           <AssetsStakedVolumes slug="quarterly-assets-volume" />

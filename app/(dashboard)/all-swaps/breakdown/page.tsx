@@ -8,10 +8,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Daily Swaps
+              Daily Swaps by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of swaps over time, grouped by day and broken down by chain
+              Swaps over time, grouped by day and by chain
             </dd>
           </div>
           <BreakdownSwaps slug="breakdown-daily-swaps" />
@@ -19,11 +19,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Weekly Swaps
+              Weekly Swaps by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of swaps over time, grouped by week and broken down by
-              chain
+              Swaps over time, grouped by week and by chain
             </dd>
           </div>
           <BreakdownSwaps slug="breakdown-weekly-swaps" />
@@ -31,11 +30,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Monthly Swaps
+              Monthly Swaps by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of swaps over time, grouped by month and broken down by
-              chain
+              Swaps over time, grouped by month and by chain
             </dd>
           </div>
           <BreakdownSwaps slug="breakdown-monthly-swaps" />
@@ -43,11 +41,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Quarterly Swaps
+              Quarterly Swaps by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of swaps over time, grouped by quarter and broken down by
-              chain
+              Swaps over time, grouped by quarter and by chain
             </dd>
           </div>
           <BreakdownSwaps slug="breakdown-quarterly-swaps" />

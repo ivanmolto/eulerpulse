@@ -8,10 +8,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Daily Fees
+              Daily Fees by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Fees over time, grouped by day and broken down by chain
+              Fees over time, grouped by day and by chain
             </dd>
           </div>
           <BreakdownFees slug="breakdown-daily-fees" />
@@ -19,10 +19,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Weekly Fees
+              Weekly Fees by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Fees over time, grouped by week and broken down by chain
+              Fees over time, grouped by week and by chain
             </dd>
           </div>
           <BreakdownFees slug="breakdown-weekly-fees" />
@@ -30,10 +30,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Monthly Fees
+              Monthly Fees by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Fees over time, grouped by month and broken down by chain
+              Fees over time, grouped by month and by chain
             </dd>
           </div>
           <BreakdownFees slug="breakdown-monthly-fees" />
@@ -41,10 +41,10 @@ export default function Breakdown() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Quarterly Fees
+              Quarterly Fees by Chain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Fees over time, grouped by quarter and broken down by chain
+              Fees over time, grouped by quarter and by chain
             </dd>
           </div>
           <BreakdownFees slug="breakdown-quarterly-fees" />

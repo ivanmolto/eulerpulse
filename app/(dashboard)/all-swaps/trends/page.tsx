@@ -11,7 +11,7 @@ export default function Trends() {
               Daily Swaps
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of swaps over time grouped by day
+              Swaps over time grouped by day
             </dd>
           </div>
           <Swaps slug="all-daily-swaps" />
@@ -22,7 +22,7 @@ export default function Trends() {
               Weekly Swaps
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of swaps over time grouped by week
+              Swaps over time grouped by week
             </dd>
           </div>
           <Swaps slug="all-weekly-swaps" />
@@ -33,7 +33,7 @@ export default function Trends() {
               Monthly Swaps
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of swaps over time grouped by month
+              Swaps over time grouped by month
             </dd>
           </div>
           <Swaps slug="all-monthly-swaps" />
@@ -44,7 +44,7 @@ export default function Trends() {
               Quarterly Swaps
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of swaps over time grouped by quarter
+              Swaps over time grouped by quarter
             </dd>
           </div>
           <Swaps slug="all-quarterly-swaps" />
