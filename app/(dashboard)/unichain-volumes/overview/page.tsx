@@ -17,7 +17,7 @@ export default function Overview() {
               Cumulative Trading Volume over time on Unichain
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume accumulated over time on Unichain
+              Trading volume accumulated over time on Unichain
             </dd>
           </div>
           <UnichainCumulativeVolumes slug="unichain-cumulative-volumes" />

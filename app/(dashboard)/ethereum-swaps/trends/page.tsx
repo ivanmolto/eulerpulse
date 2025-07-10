@@ -11,7 +11,7 @@ export default function Trends() {
               Daily Swaps
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of Ethereum swaps over time grouped by day
+              Ethereum swaps over time grouped by day
             </dd>
           </div>
           <EthereumSwaps slug="ethereum-daily-swaps" />
@@ -22,7 +22,7 @@ export default function Trends() {
               Weekly Swaps
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of Ethereum swaps over time grouped by week
+              Ethereum swaps over time grouped by week
             </dd>
           </div>
           <EthereumSwaps slug="ethereum-weekly-swaps" />
@@ -33,7 +33,7 @@ export default function Trends() {
               Monthly Swaps
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of Ethereum swaps over time grouped by month
+              Ethereum swaps over time grouped by month
             </dd>
           </div>
           <EthereumSwaps slug="ethereum-monthly-swaps" />
@@ -44,7 +44,7 @@ export default function Trends() {
               Quarterly Swaps
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Number of Ethereumswaps over time grouped by quarter
+              Ethereum swaps over time grouped by quarter
             </dd>
           </div>
           <EthereumSwaps slug="ethereum-quarterly-swaps" />

@@ -17,7 +17,7 @@ export default function Overview() {
               Cumulative Trading Volume over time on Ethereum
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume accumulated over time on Ethereum
+              Trading volume accumulated over time on Ethereum
             </dd>
           </div>
           <EthereumCumulativeVolumes slug="ethereum-cumulative-volumes" />

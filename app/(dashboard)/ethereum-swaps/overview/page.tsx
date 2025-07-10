@@ -14,10 +14,10 @@ export default function Overview() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Cumulative swaps over time on Ethereum
+              Cumulative Swaps over time on Ethereum
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Total number of swaps accumulated over time on Ethereum
+              Swaps accumulated over time on Ethereum
             </dd>
           </div>
           <EthereumCumulativeSwaps slug="ethereum-cumulative-swaps" />

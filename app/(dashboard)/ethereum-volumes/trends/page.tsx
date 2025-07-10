@@ -11,7 +11,7 @@ export default function Trends() {
               Daily Trading Volume
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by day
+              Trading volume over time grouped by day
             </dd>
           </div>
           <EthereumVolumes slug="ethereum-daily-volumes" />
@@ -22,7 +22,7 @@ export default function Trends() {
               Weekly Trading Volume
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by week
+              Trading volume over time grouped by week
             </dd>
           </div>
           <EthereumVolumes slug="ethereum-weekly-volumes" />
@@ -33,7 +33,7 @@ export default function Trends() {
               Monthly Trading Volume
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading Volume over time grouped by month
+              Trading volume over time grouped by month
             </dd>
           </div>
           <EthereumVolumes slug="ethereum-monthly-volumes" />
@@ -44,7 +44,7 @@ export default function Trends() {
               Quarterly Trading Volume
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              TradingVolume over time grouped by quarter
+              Trading volume over time grouped by quarter
             </dd>
           </div>
           <EthereumVolumes slug="ethereum-quarterly-volumes" />

@@ -14,7 +14,7 @@ export default function Overview() {
         <div className="flex flex-col justify-between p-0">
           <div>
             <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-              Cumulative fees over time on Ethereum
+              Cumulative Fees over time on Ethereum
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
               Fees accumulated over time on Ethereum
