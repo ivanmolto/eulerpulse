@@ -29,9 +29,9 @@ const fetchDuneData = async (slug: string): Promise<any> => {
   return data;
 };
 
-export default function SwapsCount({ slug }: DuneDataProps) {
+export default function PoolsCount({ slug }: DuneDataProps) {
   const { data, isLoading, error } = useQuery({
-    queryKey: ["swaps", slug],
+    queryKey: ["pools", slug],
     queryFn: () => fetchDuneData(slug),
   });
 
@@ -51,7 +51,9 @@ export default function SwapsCount({ slug }: DuneDataProps) {
   return (
     <>
       <dd className="text-lg font-semibold text-gray-900 dark:text-gray-50 mt-1.5 flex items-center gap-2">
-        {new Intl.NumberFormat("en-US").format(data.result?.rows[0]["Swaps"])}
+        {new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(
+          data.result?.rows[0]["Pools"]
+        )}
         {executionTime && (
           <span className="text-[10px] font-normal text-teal-500 ml-2 mt-1 flex items-center gap-1">
             {executionTime}

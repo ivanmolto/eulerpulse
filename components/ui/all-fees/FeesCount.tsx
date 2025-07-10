@@ -3,11 +3,19 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
+import { relativeDate } from "@/lib/relativeDate";
+import { RiCheckLine } from "@remixicon/react";
 
 interface DuneResponse {
   result?: {
     rows: Array<Record<string, any>>;
   };
+  execution_ended_at?: string;
+  execution_id?: string;
+  query_id?: number;
+  is_execution_finished?: boolean;
+  state?: string;
+  submitted_at?: string;
 }
 
 interface DuneDataProps {
@@ -18,7 +26,7 @@ interface DuneDataProps {
 const fetchDuneData = async (slug: string): Promise<any> => {
   const response = await fetch(`/api/dune/${encodeURIComponent(slug)}`);
   const data: DuneResponse = await response.json();
-  return data.result?.rows;
+  return data;
 };
 
 export default function FeesCount({ slug }: DuneDataProps) {
@@ -35,14 +43,24 @@ export default function FeesCount({ slug }: DuneDataProps) {
 
   if (!data || data.length === 0) return <div>No data available</div>;
 
+  // Get the relative time from execution_ended_at
+  const executionTime = data.execution_ended_at
+    ? relativeDate(data.execution_ended_at)
+    : null;
+
   return (
     <>
       <dd className="text-lg font-semibold text-gray-900 dark:text-gray-50 mt-1.5 flex items-center gap-2">
         $
-        {new Intl.NumberFormat("en-US", {
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
-        }).format(data[0]["Fees"])}
+        {new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(
+          data.result?.rows[0]["Fees"]
+        )}
+        {executionTime && (
+          <span className="text-[10px] font-normal text-teal-500 ml-2 mt-1 flex items-center gap-1">
+            {executionTime}
+            <RiCheckLine className="w-3 h-3 text-teal-500" />
+          </span>
+        )}
       </dd>
     </>
   );
