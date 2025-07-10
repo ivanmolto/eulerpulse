@@ -185,7 +185,28 @@ export default function PoolsCumulativeStakedFees({
               : `$${value.toFixed(2)}`;
           return formattedValue;
         }}
-        className="mt-4 h-80"
+        className="hidden md:block mt-4 h-80"
+      />
+      <BarChart
+        showGridLines={true}
+        showLegend={false}
+        type="stacked"
+        colors={poolColors}
+        data={sortedDataChart}
+        index="Day"
+        categories={poolNames}
+        valueFormatter={(value) => {
+          const formattedValue =
+            value >= 1000000000
+              ? `$${(value / 1000000000).toFixed(2)}B`
+              : value >= 1000000
+              ? `$${(value / 1000000).toFixed(0)}M`
+              : value >= 1000
+              ? `$${(value / 1000).toFixed(2)}k`
+              : `$${value.toFixed(2)}`;
+          return formattedValue;
+        }}
+        className="block md:hidden mt-4 h-80"
       />
     </div>
   );
