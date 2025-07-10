@@ -20,7 +20,7 @@ export default function Overview() {
                 Cumulative Swaps over time
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-                Total number of swaps accumulated over time
+                Swaps accumulated over time
               </dd>
             </div>
             <CumulativeSwaps slug="cumulative-swaps" />
@@ -28,10 +28,10 @@ export default function Overview() {
           <div className="flex flex-col justify-between p-0">
             <div>
               <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                Cumulative Swaps over time by chain
+                Cumulative Swaps over time by Chain
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-                Total number of swaps over time by chain
+                Swaps accumulated over time by chain
               </dd>
             </div>
             <CumulativeSwapsChain slug="cumulative-swaps-chain" />
@@ -47,10 +47,10 @@ export default function Overview() {
           <div className="flex flex-col justify-between p-0">
             <div>
               <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                Cumulative Swaps over time, staked by chain
+                Cumulative Swaps over time by chain
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-                Total number of swaps accumulated over time, staked by chain
+                Swaps accumulated over time by chain
               </dd>
             </div>
             <CumulativeStakedSwaps slug="cumulative-swaps-chain" />
