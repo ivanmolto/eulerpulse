@@ -3,11 +3,19 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
+import { relativeDate } from "@/lib/relativeDate";
+import { RiCheckLine } from "@remixicon/react";
 
 interface DuneResponse {
   result?: {
     rows: Array<Record<string, any>>;
   };
+  execution_ended_at?: string;
+  execution_id?: string;
+  query_id?: number;
+  is_execution_finished?: boolean;
+  state?: string;
+  submitted_at?: string;
 }
 
 interface DuneDataProps {
@@ -18,7 +26,7 @@ interface DuneDataProps {
 const fetchDuneData = async (slug: string): Promise<any> => {
   const response = await fetch(`/api/dune/${encodeURIComponent(slug)}`);
   const data: DuneResponse = await response.json();
-  return data.result?.rows;
+  return data;
 };
 
 import { BarChart } from "@/components/BarChart";
@@ -28,7 +36,7 @@ export default function CumulativeStakedVolumes({
   column,
 }: DuneDataProps) {
   const { data, isLoading, error } = useQuery({
-    queryKey: ["cumulative-volumes-chain", slug],
+    queryKey: ["cumulative-staked-chain", slug],
     queryFn: () => fetchDuneData(slug),
   });
 
@@ -38,12 +46,20 @@ export default function CumulativeStakedVolumes({
     );
   if (error) return <div>Error: {error.message}</div>;
 
-  if (!data || data.length === 0) return <div>No data available</div>;
+  if (!data || !data.result?.rows || data.result.rows.length === 0)
+    return <div>No data available</div>;
+
+  // Get the relative time from execution_ended_at
+  const executionTime = data.execution_ended_at
+    ? relativeDate(data.execution_ended_at)
+    : null;
+
+  const chartData = data.result.rows;
 
   if (column) {
     return (
       <div>
-        {data.map((row: Record<string, any>, index: number) => (
+        {chartData.map((row: Record<string, any>, index: number) => (
           <div key={index}>
             {column}: {row[column]}
           </div>
@@ -53,7 +69,7 @@ export default function CumulativeStakedVolumes({
   }
 
   // Transform data from long to wide format
-  const transformedData = data.reduce(
+  const transformedData = chartData.reduce(
     (acc: Record<string, Record<string, any>>, row: Record<string, any>) => {
       // Skip rows with null, undefined, or empty string dates
       if (
@@ -102,7 +118,7 @@ export default function CumulativeStakedVolumes({
 
   // Get unique chain names for categories (capitalized) and sort alphabetically
   const uniqueChains = new Set<string>(
-    data.map((row: Record<string, any>) => {
+    chartData.map((row: Record<string, any>) => {
       const chain = row.Chain as string;
       return chain.charAt(0).toUpperCase() + chain.slice(1);
     })
@@ -153,6 +169,12 @@ export default function CumulativeStakedVolumes({
         }}
         className="mt-4 h-60"
       />
+      {executionTime && (
+        <span className="text-[10px] font-normal text-teal-500 mr-4 mt-1 flex items-center gap-1 justify-end">
+          {executionTime}
+          <RiCheckLine className="w-3 h-3 text-teal-500" />
+        </span>
+      )}
     </div>
   );
 }
