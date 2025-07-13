@@ -132,11 +132,13 @@ export default function AssetsCumulativeStakedVolumes({
     return assets.map((asset) => {
       if (asset === "RLUSD") return "blue";
       if (asset === "USD₮0") return "emerald";
+      if (asset === "USD1") return "yellow";
       if (asset === "USDC") return "sky";
       if (asset === "USDT") return "green";
       if (asset === "USR") return "neutral";
       if (asset === "WBTC") return "amber";
       if (asset === "WETH") return "violet";
+      if (asset === "wstETH") return "cyan";
       return "gray"; // fallback for any other assets
     });
   };
