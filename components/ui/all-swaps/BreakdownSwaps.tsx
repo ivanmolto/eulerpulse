@@ -129,6 +129,7 @@ export default function BreakdownSwaps({ slug, column }: DuneDataProps) {
     return chains.map((chain) => {
       if (chain === "Ethereum") return "indigo";
       if (chain === "Unichain") return "pink";
+      if (chain === "Bnb") return "yellow";
       return "gray"; // fallback for any other chains
     });
   };
