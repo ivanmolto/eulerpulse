@@ -47,10 +47,10 @@ export default function Overview() {
           <div className="flex flex-col justify-between p-0">
             <div>
               <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                Cumulative Swaps over time by Chain (stacked)
+                Cumulative Swaps over time by Chain
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-                Swaps accumulated over time by chain (stacked)
+                Swaps accumulated over time by chain
               </dd>
             </div>
             <CumulativeStackedSwaps slug="cumulative-swaps-chain" />
