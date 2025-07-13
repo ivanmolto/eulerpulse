@@ -1,7 +1,7 @@
 "use client";
 
 import CumulativeSwaps from "@/components/ui/all-swaps/CumulativeSwaps";
-import CumulativeStakedSwaps from "@/components/ui/all-swaps/CumulativeStakedSwaps";
+import CumulativeStackedSwaps from "@/components/ui/all-swaps/CumulativeStackedSwaps";
 import CumulativeSwapsChain from "@/components/ui/all-swaps/CumulativeSwapsChain";
 import { cx } from "@/lib/utils";
 
@@ -47,13 +47,13 @@ export default function Overview() {
           <div className="flex flex-col justify-between p-0">
             <div>
               <dt className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                Cumulative Swaps over time by chain
+                Cumulative Swaps over time by Chain (stacked)
               </dt>
               <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-                Swaps accumulated over time by chain
+                Swaps accumulated over time by chain (stacked)
               </dd>
             </div>
-            <CumulativeStakedSwaps slug="cumulative-swaps-chain" />
+            <CumulativeStackedSwaps slug="cumulative-swaps-chain" />
           </div>
         </dl>
       </section>

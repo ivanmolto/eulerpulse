@@ -32,7 +32,10 @@ const fetchDuneData = async (slug: string): Promise<any> => {
 import { BarChart } from "@/components/BarChart";
 import { formatters } from "@/lib/utils";
 
-export default function CumulativeStakedSwaps({ slug, column }: DuneDataProps) {
+export default function CumulativeStackedSwaps({
+  slug,
+  column,
+}: DuneDataProps) {
   const { data, isLoading, error } = useQuery({
     queryKey: ["cumulative-swaps-chain", slug],
     queryFn: () => fetchDuneData(slug),
@@ -130,6 +133,7 @@ export default function CumulativeStakedSwaps({ slug, column }: DuneDataProps) {
     return chains.map((chain) => {
       if (chain === "Ethereum") return "indigo";
       if (chain === "Unichain") return "pink";
+      if (chain === "Bnb") return "yellow";
       return "gray"; // fallback for any other chains
     });
   };
