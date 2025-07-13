@@ -32,7 +32,7 @@ import { BarChart } from "@/components/BarChart";
 
 export default function EthereumFees({ slug, column }: DuneDataProps) {
   const { data, isLoading, error } = useQuery({
-    queryKey: ["fees", slug],
+    queryKey: ["ethereum-fees", slug],
     queryFn: () => fetchDuneData(slug),
   });
 
