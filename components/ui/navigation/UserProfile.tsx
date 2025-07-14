@@ -25,7 +25,7 @@ export function UserProfile() {
           >
             <Logo className="size-5" />
           </span>
-          <span className="text-gray-900 dark:text-gray-500">
+          <span className="text-gray-900 dark:text-gray-400">
             Settings and Links
           </span>
         </span>
