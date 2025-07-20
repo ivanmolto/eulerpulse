@@ -8,8 +8,8 @@ import { siteConfig } from "../../siteConfig";
 
 const navigation = [
   { name: "Overview", href: siteConfig.baseLinks.allpools.overview },
-  { name: "Trading Volumes", href: siteConfig.baseLinks.allpools.trends },
-  /* { name: "Fees", href: siteConfig.baseLinks.allpools.breakdown }, */
+  /*{ name: "Trading Volumes", href: siteConfig.baseLinks.allpools.trends },
+   { name: "Fees", href: siteConfig.baseLinks.allpools.breakdown }, */
 ];
 export default function Layout({
   children,
