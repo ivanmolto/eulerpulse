@@ -18,7 +18,8 @@ export default function Overview() {
               Cumulative Trading Volume over time by Pool
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Trading volume accumulated over time by pool
+              Trading volume accumulated over time by pool (pools over $25k in
+              total volume)
             </dd>
           </div>
           <PoolsCumulativeStakedVolumes slug="pools-cumulative-volumes" />
@@ -29,7 +30,7 @@ export default function Overview() {
               Cumulative Fees over time by Pool
             </dt>
             <dd className="mt-0.5 text-sm/6 text-gray-500 dark:text-gray-500">
-              Fees accumulated over time by pool
+              Fees accumulated over time by pool (pools over $100 in total fees)
             </dd>
           </div>
           <PoolsCumulativeStakedFees slug="pools-cumulative-fees" />
